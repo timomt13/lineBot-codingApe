@@ -35,7 +35,7 @@ def callback():
 @line_handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
 
-    if event.message.text == 'confirm':
+    if event.message.text == 'hi':
         confirm_template = TemplateSendMessage(
             alt_text = '你有重大的訊息呵',
             template = ConfirmTemplate(
