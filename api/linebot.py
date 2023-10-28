@@ -37,7 +37,7 @@ def handle_message(event):
 
     if event.message.text == 'confirm':
         confirm_template = TemplateSendMessage(
-            alt_text = '你有訊息',
+            alt_text = '你有重大的訊息呵',
             template = ConfirmTemplate(
                 text = 'drink coffee?',
                 actions = [
