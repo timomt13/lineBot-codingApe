@@ -1,2 +1,5 @@
 Flask==2.3.2
 line-bot-sdk
+requests
+beautifulsoup4
+bs4
