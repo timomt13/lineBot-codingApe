@@ -57,7 +57,7 @@ def handle_message(event):
         buttons_template = TemplateSendMessage(
             alt_text = 'buttons template',
             template = ButtonsTemplate(
-                thumbnail_image_url='http://img.gmw.cn/imgsports/attachement/jpg/site2/20140616/9cb70d6c6f981508786a1e.jpg',
+                thumbnail_image_url='https://img.gmw.cn/imgsports/attachement/jpg/site2/20140616/9cb70d6c6f981508786a1e.jpg',
                 title = 'He is the G.O.A.T Messi',
                 text = 'He is the king of football',
                 actions = [
