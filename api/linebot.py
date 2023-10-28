@@ -45,7 +45,7 @@ def handle_message(event):
                         label = 'yes bro',
                         text = 'ok'),
                     MessageAction(
-                        label = 'I'm Messi's big fan!',
+                        label = 'I am Messi s big fan!',
                         text = 'me too!')]
                 )
             )
