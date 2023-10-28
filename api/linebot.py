@@ -46,7 +46,7 @@ def handle_message(event):
                         text = 'ok'),
                     MessageAction(
                         label = 'I'm Messi's big fan!',
-                        text = 'me too')]
+                        text = 'me too!')]
                 )
             )
         line_bot_api.reply_message(event.reply_token, confirm_template)
