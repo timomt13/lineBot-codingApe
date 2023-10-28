@@ -53,13 +53,13 @@ def handle_message(event):
 
 
     #按鈕樣板
-    if event.message.text == 'button':
+    if event.message.text == 'messi':
         buttons_template = TemplateSendMessage(
             alt_text = 'buttons template',
             template = ButtonsTemplate(
                 thumbnail_image_url='http://image.uczzd.cn/7744985882967685776.jpg?id=0',
-                title = 'Brown Cafe',
-                text = 'Enjoy your coffee',
+                title = 'He is the G.O.A.T Messi',
+                text = 'He is the king of football',
                 actions = [
                     MessageAction(
                         label = '咖啡有什麼好處',
