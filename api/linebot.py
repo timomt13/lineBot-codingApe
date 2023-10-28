@@ -35,18 +35,18 @@ def callback():
 @line_handler.add(MessageEvent, message=TextMessage)
 def handle_message(event):
 
-    if event.message.text == 'hi':
+    if event.message.text == 'confirm':
         confirm_template = TemplateSendMessage(
-            alt_text = '你有重大的訊息呵',
+            alt_text = 'HI 帥哥你有訊息',
             template = ConfirmTemplate(
-                text = 'Do you like Lionel Messi?',
+                text = 'Do you like Messi?',
                 actions = [
                     MessageAction(
                         label = 'yes bro',
-                        text = 'ok'),
+                        text = 'me too'),
                     MessageAction(
-                        label = 'I am Messi s big fan!',
-                        text = 'me too!')]
+                        label = 'no i like CR7',
+                        text = '你很煩喔你很煩喔你很煩喔你很煩喔你很煩喔你很煩喔你很煩喔你很煩喔你很煩喔你很煩喔你很煩喔你很煩喔你很煩喔你很煩喔')]
                 )
             )
         line_bot_api.reply_message(event.reply_token, confirm_template)
@@ -133,4 +133,5 @@ def handle_message(event):
         line_bot_api.reply_message(event.reply_token, image_carousel_template)
 
 if __name__ == "__main__":
+    app.run()
     app.run()
