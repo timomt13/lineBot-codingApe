@@ -74,14 +74,14 @@ def handle_message(event):
 
 
     #carousel樣板
-    if event.message.text == 'carousel':
+    if event.message.text == 'cute':
         carousel_template = TemplateSendMessage(
             alt_text = 'carousel template',
             template = CarouselTemplate(
                 columns = [
                     #第一個
                     CarouselColumn(
-                        thumbnail_image_url = 'https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg',
+                        thumbnail_image_url = 'https://i04piccdn.sogoucdn.com/4d9582db3c7d8bdb',
                         title = 'this is menu1',
                         text = 'menu1',
                         actions = [
